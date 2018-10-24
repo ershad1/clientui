@@ -1,11 +1,11 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-setup',
-  templateUrl: './setup.component.html',
-  styleUrls: ['./setup.component.scss'],
+  selector: 'app-hrm',
+  templateUrl: './hrm.component.html',
+  styleUrls: ['./hrm.component.scss']
 })
-export class SetupComponent implements OnInit {
+export class HrmComponent implements OnInit {
 
   constructor() { }
 
@@ -13,7 +13,7 @@ export class SetupComponent implements OnInit {
   }
   appItems = [
     {
-      label: 'Setup',
+      label: 'Hrm',
       icon: 'favorite',
       link: 'https://www.npmjs.com/package/ng-material-multilevel-menu',
       externalRedirect: true
@@ -84,5 +84,5 @@ export class SetupComponent implements OnInit {
       icon: 'star_rate',
       hidden: true
     }
-  ];
+  ]
 }
