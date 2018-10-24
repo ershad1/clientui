@@ -13,10 +13,10 @@ export class SetupComponent implements OnInit {
   }
   appItems = [
     {
-      label: 'Setup',
-      icon: 'favorite',
-      link: 'https://www.npmjs.com/package/ng-material-multilevel-menu',
-      externalRedirect: true
+      label: 'User',
+      faIcon: 'fas fa-users',
+      link: '/users',
+
     },
     {
       label: 'Item 1 (with Font awesome icon)',
