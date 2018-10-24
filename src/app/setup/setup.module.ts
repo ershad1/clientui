@@ -9,7 +9,9 @@ import {SharedModule} from '../shared/shared/shared.module';
     SetupRoutingModule,
     SharedModule
   ],
-  declarations: [SetupComponent]
+  declarations: [
+    SetupComponent
+  ]
 })
 export class SetupModule {
 }
