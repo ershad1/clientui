@@ -3,9 +3,10 @@
     <ng-material-multilevel-menu  [items]='appItems' (selectedItem)="selectedItem($event)"></ng-material-multilevel-menu>
   </mat-sidenav>
 
-  <mat-sidenav-content >
-    <p><button mat-button (click)="sidenav.toggle()">
+  <mat-sidenav-content fxLayout="row">
+    <button mat-button (click)="sidenav.toggle()">
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button></p>
+    </button>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

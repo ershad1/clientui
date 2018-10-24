@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {SetupComponent} from './setup/setup.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {SetupComponent} from './setup.component';
+
 
 const routes: Routes = [
-  // {path: '', redirectTo: '/setup', pathMatch: 'full'},
-  {path: '', component: SetupComponent},
-  // {path: 'setup', loadChildren: '../setup/setup.module#SetupModule'},
-  // {path: 'country', loadChildren: './setup/country/country.module#CountryModule'},
-  // {path: 'privilege', loadChildren: './setup/privilege/privilege.module#PrivilegeModule'},
+  {
+    path: '', component: SetupComponent,
+    children: [
+      {path: 'user', loadChildren: './user/user.module#UserModule'},
+    ]
+  }
 ];
 
 @NgModule({

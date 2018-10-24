@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-setup',
@@ -7,7 +8,9 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class SetupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+  ) {
+  }
 
   ngOnInit() {
   }
@@ -15,7 +18,7 @@ export class SetupComponent implements OnInit {
     {
       label: 'User',
       faIcon: 'fas fa-users',
-      link: '/users',
+      link: 'setup/user',
 
     },
     {
@@ -85,4 +88,8 @@ export class SetupComponent implements OnInit {
       hidden: true
     }
   ];
+  selectedItem($event) {
+    console.log($event);
+    this.router.navigate([$event.link]);
+  }
 }

@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {MaterialModule} from '../material/material.module';
 import {NgMaterialMultilevelMenuModule} from 'ng-material-multilevel-menu';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   // imports: [
@@ -15,7 +16,8 @@ import {NgMaterialMultilevelMenuModule} from 'ng-material-multilevel-menu';
     ReactiveFormsModule,
     HttpClientModule,
     MaterialModule,
-    NgMaterialMultilevelMenuModule
+    NgMaterialMultilevelMenuModule,
+    FlexLayoutModule
   ]
 })
 export class SharedModule { }
